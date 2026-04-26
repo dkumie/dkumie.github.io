@@ -1,155 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Dagmawi Kumie</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Markets, Valuation, and Quantitative Research</title>
   <meta
     name="description"
-    content="Dagmawi Kumie is a Columbia University senior studying Financial Economics and Statistics, focused on finance, markets, and technical projects."
+    content="Columbia senior building finance and quant projects across valuation, market research, and data-driven trading."
   />
-
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.yourdomain.com/" />
+  <meta property="og:title" content="Your Name — Markets, Valuation, and Quantitative Research" />
+  <meta
+    property="og:description"
+    content="Selected work, notebook entries, experience, and resume."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.yourdomain.com/" />
+  <meta property="og:image" content="https://www.yourdomain.com/assets/img/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="style.css" />
-
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
 </head>
 
-<body>
+<body id="top">
+  <!-- Accessibility note:
+       The skip link helps keyboard and screen-reader users move past the sticky header. -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header">
-    <a href="#" class="brand">Dagmawi Kumie</a>
-
-    <div class="header-year">2026</div>
-
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#notebook">Notebook</a>
-      <a href="#experience">Experience</a>
-
-      <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
+    <div class="wrap header-inner">
+      <!-- Keep this left side compact, Mike-Matas style. -->
+      <a class="brand" href="#top" aria-label="Go to top of page">
+        <span class="brand-name">Your Name</span>
+        <span class="brand-meta">Columbia University · Senior</span>
       </a>
 
-      <a href="https://x.com/yourusername" target="_blank" aria-label="X">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="header-panel"
+        aria-label="Toggle navigation"
+      >
+        Menu
+      </button>
 
-      <a href="https://linkedin.com/in/d-kumie" target="_blank" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
-      </a>
-    </nav>
+      <div class="header-panel" id="header-panel">
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#notebook">Notebook</a>
+          <a href="#experience">Experience</a>
+          <a href="assets/resume/your-name-resume.pdf" target="_blank" rel="noopener noreferrer">
+            Resume
+          </a>
+        </nav>
+
+        <!-- Development-friendly text pills.
+             Replace with Font Awesome or official SVG logos before launch if desired. -->
+        <div class="socials" aria-label="Social links">
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/your-linkedin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            in
+          </a>
+
+          <a
+            class="social-link"
+            href="https://github.com/your-github"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+          >
+            gh
+          </a>
+
+          <a
+            class="social-link"
+            href="https://x.com/your-handle"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X profile"
+          >
+            x
+          </a>
+
+          <!-- Optional:
+          <a
+            class="social-link"
+            href="https://www.instagram.com/your-handle/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram profile"
+          >
+            ig
+          </a>
+          -->
+        </div>
+      </div>
+    </div>
   </header>
 
-  <main class="page">
+  <main id="main">
+    <section class="hero wrap section-space" aria-labelledby="hero-heading">
+      <p class="eyebrow">Markets · Valuation · Quantitative Research</p>
+      <h1 id="hero-heading">
+        Columbia senior building analytical work at the intersection of finance,
+        market structure, and data.
+      </h1>
 
-    <section class="work-index" aria-label="Selected work">
-      <article class="work-item">
-        <a href="#" class="work-link">
-          <h1>Netflix Coverage</h1>
-          <p class="work-meta">Equity Research / Columbia IEOR / 2024</p>
-          <p class="work-detail">
-            Integrated 3-statement model, DCF, trading comparables, WACC build-up,
-            and valuation deck.
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="lead">
+            I am interested in investment banking and quantitative trading, and I use this site
+            to present my strongest work in a format that is easy to review quickly.
           </p>
-        </a>
-      </article>
-
-      <article class="work-item">
-        <a href="#" class="work-link">
-          <h1>VISAW3</h1>
-          <p class="work-meta">Web3 Credit System / Python + React + Solidity</p>
-          <p class="work-detail">
-            Built a credit card system for Web3 connecting crypto lending pools,
-            decentralized applications, and customers.
+          <p>
+            My goal is simple: show clear thinking, disciplined execution, and honest analysis.
+            I prefer fewer projects with deeper writeups, clean assumptions, and transparent results.
           </p>
-        </a>
-      </article>
+        </div>
 
-      <article class="work-item">
-        <a href="#" class="work-link">
-          <h1>TVEEBEE</h1>
-          <p class="work-meta">Serverless Web App / AWS + Python + React</p>
-          <p class="work-detail">
-            Designed a scalable asynchronous TV review platform with friend reviews,
-            user storage, and recommendation features.
-          </p>
-        </a>
-      </article>
-
-      <article class="work-item">
-        <a href="#" class="work-link">
-          <h1>HACKVEST</h1>
-          <p class="work-meta">ML Farmer Assistant / PyTorch + Flask + Firebase</p>
-          <p class="work-detail">
-            Designed a machine-learning-based virtual farmer assistant with image-based
-            plant disease recognition.
-          </p>
-        </a>
-      </article>
-    </section>
-
-    <section id="about" class="content-section about-section">
-      <h2>About</h2>
-
-      <p>
-        I am a Columbia University senior studying Financial Economics and Statistics.
-        My work sits between markets, modeling, and technical systems. I am interested
-        in investment banking, quantitative trading, and using analytical tools to make
-        better decisions under uncertainty.
-      </p>
-    </section>
-
-    <section id="notebook" class="content-section notebook-section">
-      <h2>Notebook</h2>
-
-      <div class="notebook-list">
-        <a href="#">Corporate Finance</a>
-        <a href="#">Statistics & Probability</a>
-        <a href="#">Python Learning Log</a>
-        <a href="#">Markets & Trading Notes</a>
+        <aside class="hero-facts" aria-label="Quick facts">
+          <dl>
+            <div>
+              <dt>Focus</dt>
+              <dd>IB, markets, and quant research</dd>
+            </div>
+            <div>
+              <dt>Current build</dt>
+              <dd>Two flagship projects + active notebook</dd>
+            </div>
+            <div>
+              <dt>Based in</dt>
+              <dd>New York City</dd>
+            </div>
+            <div>
+              <dt>Contact</dt>
+              <dd><a href="mailto:you@columbia.edu">you@columbia.edu</a></dd>
+            </div>
+          </dl>
+        </aside>
       </div>
     </section>
 
-    <section id="experience" class="content-section experience-section">
-      <h2>Experience</h2>
+    <section class="wrap section-space" id="work" aria-labelledby="work-heading">
+      <div class="section-head">
+        <p class="section-kicker">Selected work</p>
+        <h2 id="work-heading">Two flagship projects</h2>
+      </div>
 
-      <article class="experience-item">
-        <h3>CU Industrial Engineering & Operations Research</h3>
-        <p>Equity Research Fellow, Netflix Coverage / New York / 2024</p>
+      <article class="project-row">
+        <div class="project-meta">
+          <p class="project-index">01</p>
+          <p class="project-track">Investment banking style</p>
+        </div>
+
+        <div class="project-body">
+          <h3>Consumer Staples DCF and Comparable Companies Review</h3>
+          <p class="project-summary">
+            Built a three-statement operating model, benchmarked public comps,
+            and tested valuation sensitivity under revenue, margin, and exit-multiple scenarios.
+          </p>
+
+          <ul class="tag-list" aria-label="Project tools">
+            <li>Excel</li>
+            <li>DCF</li>
+            <li>Comps</li>
+            <li>Sensitivity analysis</li>
+          </ul>
+
+          <ul class="evidence-list">
+            <li>Clear thesis statement and key risks at the top</li>
+            <li>Outputs include valuation range, drivers, and downside/upside cases</li>
+            <li>Writeup keeps assumptions separate from conclusions</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="projects/consumer-dcf/index.html">View project</a>
+            <a href="assets/img/project-ib-cover.jpg" target="_blank" rel="noopener noreferrer">
+              Open cover visual
+            </a>
+          </div>
+        </div>
       </article>
 
-      <article class="experience-item">
-        <h3>iCog Labs</h3>
-        <p>Robotics Trainee Intern / New York / 2023</p>
-      </article>
+      <article class="project-row">
+        <div class="project-meta">
+          <p class="project-index">02</p>
+          <p class="project-track">Quant trading style</p>
+        </div>
 
-      <article class="experience-item">
-        <h3>Achim Initiative</h3>
-        <p>Finance & Operations Lead / Gondar, Ethiopia / 2023</p>
+        <div class="project-body">
+          <h3>Intraday Mean-Reversion Backtest with Costs and Walk-Forward Checks</h3>
+          <p class="project-summary">
+            Tested a short-horizon equity signal with explicit transaction-cost assumptions,
+            out-of-sample checks, and drawdown analysis to separate signal quality from noise.
+          </p>
+
+          <ul class="tag-list" aria-label="Project tools">
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>Backtesting</li>
+            <li>Risk metrics</li>
+          </ul>
+
+          <ul class="evidence-list">
+            <li>Shows hypothesis, data treatment, and execution assumptions</li>
+            <li>Includes equity curve, drawdown, and performance table</li>
+            <li>States what failed, not only what worked</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="projects/mean-reversion/index.html">View project</a>
+            <a href="assets/img/project-quant-cover.jpg" target="_blank" rel="noopener noreferrer">
+              Open cover visual
+            </a>
+          </div>
+        </div>
       </article>
     </section>
 
-    <section class="content-section recognition-section">
-      <h2>Recognition</h2>
+    <section class="wrap section-space" id="notebook" aria-labelledby="notebook-heading">
+      <div class="section-head">
+        <p class="section-kicker">My notebook</p>
+        <h2 id="notebook-heading">Short notes that show process</h2>
+      </div>
 
-      <div class="recognition-list">
-        <p>John Jay Scholar — Columbia University</p>
-        <p>Robert & Shirley Kaplan Scholarship — Columbia University</p>
-        <p>New York City Blockchain Hackathon — 3rd Place</p>
-        <p>Top 2% Addiscoder Participant — Data Structures and Algorithms Camp</p>
-        <p>iCog RoboSoccer Cup — National Competition</p>
+      <div class="note-grid">
+        <article class="note-card">
+          <p class="note-date">April 2026</p>
+          <h3>Bank earnings dispersion and what I would test next</h3>
+          <p>
+            A short memo on where results diverged from consensus, which variables mattered most,
+            and which assumptions would deserve follow-up work.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <p class="note-date">April 2026</p>
+          <h3>Why transaction costs change weak backtests more than the signal does</h3>
+          <p>
+            A process note on slippage, turnover, and why net performance is the only performance
+            that matters in a presentation.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <p class="note-date">April 2026</p>
+          <h3>What I borrowed from a sell-side initiation format</h3>
+          <p>
+            A brief note on structuring a project page like something a busy recruiter can skim in under two minutes.
+          </p>
+        </article>
       </div>
     </section>
 
+    <section class="wrap section-space" id="experience" aria-labelledby="experience-heading">
+      <div class="section-head">
+        <p class="section-kicker">Experience</p>
+        <h2 id="experience-heading">Selected roles and analytical work</h2>
+      </div>
+
+      <div class="experience-list">
+        <article class="experience-item">
+          <div class="experience-left">
+            <h3>Role title</h3>
+            <p>Organization name</p>
+          </div>
+          <div class="experience-right">
+            <p class="experience-date">Month Year — Month Year</p>
+            <ul>
+              <li>Built weekly updates for senior stakeholders and sharpened the underlying analysis.</li>
+              <li>Owned data cleanup, reconciled assumptions, and summarized decision implications.</li>
+              <li>Worked on parallel tasks with clear deadlines and concise written outputs.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-item">
+          <div class="experience-left">
+            <h3>Leadership or research role</h3>
+            <p>Club, lab, student fund, or internship</p>
+          </div>
+          <div class="experience-right">
+            <p class="experience-date">Month Year — Month Year</p>
+            <ul>
+              <li>Turned an open-ended question into a structured workstream with timelines and outputs.</li>
+              <li>Presented findings orally and in writing, with clear assumptions and limitations.</li>
+              <li>Used Excel, Python, or both depending on the task rather than forcing one tool everywhere.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section-space" id="about" aria-labelledby="about-heading">
+      <div class="section-head">
+        <p class="section-kicker">About</p>
+        <h2 id="about-heading">Background and working style</h2>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            I am a Columbia senior interested in high-performance analytical work. I like situations
+            where a messy question has to be made legible quickly, whether that means framing a valuation,
+            testing a trading idea, or reducing a complex process to a one-page memo.
+          </p>
+          <p>
+            This site is deliberately simple. The goal is not novelty. The goal is clarity, restraint,
+            and an honest presentation of how I think.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="mini-heading">Tools</h3>
+          <p>Excel, PowerPoint, Python, Pandas, basic statistics, presentation writing</p>
+
+          <h3 class="mini-heading">Interests</h3>
+          <p>Market structure, valuation, earnings, event-driven analysis, systematic research</p>
+
+          <h3 class="mini-heading">Available links</h3>
+          <p>
+            <a href="assets/resume/your-name-resume.pdf" target="_blank" rel="noopener noreferrer">
+              Resume PDF
+            </a>
+            ·
+            <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+            ·
+            <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">
-    <a href="mailto:d.kumie@columbia.edu">Email</a>
-    <a href="https://linkedin.com/in/d-kumie" target="_blank">LinkedIn</a>
-    <a href="resume.pdf" target="_blank">Résumé</a>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> Your Name</p>
+      <p>Built as a fast static site for recruiting review.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
